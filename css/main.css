@@ -1,14 +1,17 @@
 body {
     margin: 60px auto;
-    width: 90%;
+    width: 70%;
 }
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    background-color: royalblue;
+    font-family:'Helvetica';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
 nav ul li, footer ul li {
+    color: white;
     display: inline;
     margin-right: 20px;
 }
@@ -16,7 +19,7 @@ nav ul li, footer ul li {
 /* a corresponds to links, with a:hover being the decorator when you mouse-over it */
 a {
     text-decoration: none;
-    color: cornflowerblue;
+    color:slateblue;
 }
 a:hover {
     text-decoration: underline;
@@ -25,7 +28,7 @@ a:hover {
 /* h1 is the main header for the home page */
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Helvetica';
 }
 
 /* p is the paragraph */
@@ -40,6 +43,7 @@ p {
 }
 
 footer {
+    /* This border-top makes a horizontal line */
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
