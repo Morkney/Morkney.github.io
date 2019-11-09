@@ -1,22 +1,33 @@
 body {
-    margin: 60px auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
     width: 70%;
 }
 
 nav ul, footer ul {
     background-color: royalblue;
     font-family:'Helvetica';
-    padding: 0px;
+    padding: 10px;
     list-style: none;
     font-weight: bold;
 }
+nav ul {
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 50px;
+}
+footer ul {
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 50px;
+}
 nav ul li, footer ul li {
-    color: white;
     display: inline;
     margin-right: 20px;
 }
 
 /* a corresponds to links, with a:hover being the decorator when you mouse-over it */
+/* a1 and a2 are the fixed links in the navigation bar and footer. */
 a {
     text-decoration: none;
     color:slateblue;
@@ -24,6 +35,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+a1 {
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    transition: 0.3s;
+}
+a1:hover {
+    background-color: cornflowerblue;
+    transition: 0.3s;
+}
+a1:active {
+    background-color: rgb(100, 164, 237);
+    transition: 0.0s;
+}
+
 
 /* h1 is the main header for the home page */
 h1 {
@@ -49,10 +77,33 @@ footer {
 }
 
 ul.posts { 
+    font-family:'Helvetica';
     margin: 20px auto 40px; 
-    font-size: 1.5em;
+    font-size: 1.0em;
+    transition: 0.5s;
+}
+ul.posts:hover {
+    padding-left: 50px;
+    transition: 0.5s;
 }
 
 ul.posts li {
     list-style: none;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+.photo img {
+    animation: spin 10s linear infinite;
+    border-radius: 100px;
+    float: right;
+    margin: auto 5px;
+    margin-top: -140px;
 }
