@@ -29,6 +29,10 @@ h1 {
 }
 
 /* p is the paragraph */
+/* if I want to change a specific paragraph, or anything else, I can use css #p1 instead of p.
+Then, in the html file I must have <p id="p1"> instead of <p>. 
+I can do the same with .p1, except I call this with <p class="p1">. I can have multiple classes at once, ie <p class="p1 p2">. 
+If I want, I can select all html elements on a page with *. */
 p {
     font-size: 1.0em;
     line-height: 1.4em;
