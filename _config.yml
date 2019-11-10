@@ -1,5 +1,5 @@
-theme: jekyll-theme-cayman
-name: Hank Quinlan, Horrible Cop
+theme: none
+name: Matthew Orkney
 markdown: kramdown
 
 permalink: /blog/:year/:month/:day/:title

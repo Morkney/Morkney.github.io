@@ -1,62 +1,103 @@
+.header {
+  border-bottom: 2px solid #d5d5d5;
+  background-image: url("../images/placeholder.png");
+  background-attachment: fixed;
+  background-color: #111;
+  font-family:'Helvetica';
+  padding: 10px;
+  list-style: none;
+  font-weight: bold;
+  border-radius: 0px 0px 50px 0px;
+  padding-bottom: 50px;
+  margin-top: -20px;
+  position: relative;
+  z-order: 1;
+} 
+
 body {
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    width: 70%;
+  background-color: #777;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width: 80%;
 }
 
-nav ul, footer ul {
-    background-color: royalblue;
-    font-family:'Helvetica';
-    padding: 10px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul {
-    border-radius: 0px 0px 10px 10px;
-    padding-top: 50px;
-}
-footer ul {
-    border-radius: 10px 10px 0px 0px;
-    padding-bottom: 50px;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+body ul {
+  background-color: #eee;
+  border-radius: 0px 0px 20px 0px;
 }
 
-/* a corresponds to links, with a:hover being the decorator when you mouse-over it */
-/* a1 and a2 are the fixed links in the navigation bar and footer. */
+.container {
+  padding-left: 220px;
+}
+
+/* Hyperlink style */
 a {
-    text-decoration: none;
-    color:slateblue;
+text-decoration: none;
+color: rgb(34, 38, 161);
 }
 a:hover {
-    text-decoration: underline;
-}
-a1 {
-    padding: 3px 5px 3px 5px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    color:white;
-    transition: 0.3s;
-}
-a1:hover {
-    background-color: cornflowerblue;
-    transition: 0.3s;
-}
-a1:active {
-    background-color: rgb(100, 164, 237);
-    transition: 0.0s;
+text-decoration: underline;
 }
 
+/* Navigation sidebar style */
+.nav {
+  background-image: url("../images/placeholder.png");
+  background-attachment: fixed;
+  background-color: #111;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 10%;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-/* h1 is the main header for the home page */
+/* Navigation link style */
+.nav a {
+  margin-right: 15px;
+  display: block;
+  padding: 3px 5px 3px 5px;
+  border-radius: 5px;
+  text-align: right;
+  text-decoration: none;
+  color: #777;
+  transition: 0.2s;
+}
+.nav a:hover {
+  color: cornflowerblue;
+}
+.nav a:active {
+  color: rgb(100, 164, 237);
+  transition: 0.0s;
+}
+
+/* h1 is the main header */
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica';
+  color: white;
+  background-color: #333;
+  border-bottom: 2px solid #d5d5d5;
+  background-image: linear-gradient(90deg, rgb(8, 110, 35) 1%, rgb(25, 69, 166));
+  border-radius: 0px 0px 50px 0px;
+  margin-top: -50px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-left: -60px; 
+  font-size: 3em;
+  font-family:'Trebuchet MS';
+}
+
+/* h2 is for the secondary headers */
+h2 {
+  color: black;
+  font-size: 1.2em;
+  font-family: 'Helvetica';
+  margin-left: -40px;
 }
 
 /* p is the paragraph */
@@ -65,45 +106,71 @@ Then, in the html file I must have <p id="p1"> instead of <p>.
 I can do the same with .p1, except I call this with <p class="p1">. I can have multiple classes at once, ie <p class="p1 p2">. 
 If I want, I can select all html elements on a page with *. */
 p {
-    font-size: 1.0em;
-    line-height: 1.4em;
-    color: royalblue;
+  font-size: 1.0em;
+  line-height: 1.4em;
+  color: black;
+  margin-left: -40px;
+  padding-left: 10px;
 }
 
-footer {
-    /* This border-top makes a horizontal line */
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+/* Give the horizontal rulers a bit of pizazz */
+.hr_nav {
+  background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0))
+  height: 5px;
 }
 
 ul.posts { 
-    font-family:'Helvetica';
-    margin: 20px auto 40px; 
-    font-size: 1.0em;
-    transition: 0.5s;
+  font-family:'Helvetica';
+  margin: 20px auto 40px; 
+  font-size: 1.0em;
+  transition: 0.5s;
 }
 ul.posts:hover {
-    padding-left: 50px;
-    transition: 0.5s;
+  padding-left: 50px;
+  transition: 0.5s;
 }
 
 ul.posts li {
-    list-style: none;
+  list-style: none;
 }
 
+/* Animate and insert main photo on the sidebar */
 @keyframes spin {
-	0% {
-		transform: rotateZ(0);
-	}
-	100% {
-		transform: rotateZ(360deg);
-	}
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.photo img {
+  animation: spin 10s linear infinite;
+  border-radius: 100px;
+  margin-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-.photo img {
-    animation: spin 10s linear infinite;
-    border-radius: 100px;
-    float: right;
-    margin: auto 5px;
-    margin-top: -140px;
+/* Footer style */
+.footer1 {
+  border-top: 2px solid #d5d5d5;
+  background-image: linear-gradient(90deg, rgb(8, 110, 35) 1%, rgb(25, 69, 166));
+  border-radius: 0px 50px 0px 0px;
+  padding-top: 100px;
+  margin-bottom: -50px;
+}
+
+.footer2 {
+  background-color: #111;
+  font-family:'Helvetica';
+  padding: 10px;
+  list-style: none;
+  font-weight: bold;
+  border-radius: 0px 50px 10px 0px;
+  padding-bottom: 100px;
+  /* This border-top makes a horizontal line */
+  background-image: url("../images/placeholder.png");
+  background-attachment: fixed;
+  border-top: 2px solid #d5d5d5;
+  font-size: .8em;
 }
