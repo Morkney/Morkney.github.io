@@ -1,37 +1,25 @@
 .header {
-  background-image: url("../images/pillars.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url("../images/placeholder.png"); 
   background-color: #111;
-  font-family:'Helvetica';
+  border-bottom: 1px solid black;
+  font-family:'Ebrima';
   padding: 10px;
   list-style: none;
   font-weight: bold;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 100px 0px;
   padding-bottom: 100px;
   margin-top: -20px;
-  margin-bottom: -50px;
+  margin-bottom: 0px;
   position: relative;
-  z-index: -3;
+  z-index: 2;
 } 
-
-.header1 {
-  background-color: #eee;
-  border-radius: 20px 20px 0px 0px;
-  margin-top: 70px;
-  padding-bottom: 60px;
-  margin-bottom: -135px;
-  margin-left: 160px;
-  position: relative;
-  z-index: -1;
-}
 
 body {
   background-color: black;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  width: 80%;
+  width: 100%;
 }
 
 body ul {
@@ -56,28 +44,24 @@ text-decoration: underline;
 
 /* Navigation sidebar style */
 .nav {
-  background-image: url("../images/pillars.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #111;
-  font-family: 'Helvetica';
-  font-weight: bold;
+  background-color: #445;
+  background-image: linear-gradient(90deg, #334, #445 5% 95%, #334);
+  font-family: 'Ebrima';
   height: 100%;
   width: 200px;
   position: fixed;
   z-index: 100;
   top: 0;
-  left: 10%;
+  left: 0%;
   overflow-x: hidden;
   padding-top: 20px;
 }
 
 /* Navigation link style */
 .nav a {
-  margin-right: 15px;
+  margin-right: 0px;
   display: block;
-  padding: 3px 5px 3px 5px;
-  border-radius: 5px;
+  padding: 1px 15px 1px 5px;
   text-align: right;
   text-decoration: none;
   color: #ccc;
@@ -85,35 +69,53 @@ text-decoration: underline;
 }
 .nav a:hover {
   color: cornflowerblue;
+  background-color: #334;
 }
 .nav a:active {
   color: rgb(100, 164, 237);
   transition: 0.0s;
 }
 
+#borderLeft {
+  border-left: 2px solid black;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+}
+
+#ruler {
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+}
+
 /* h1 is the main header */
 h1 {
+  /*background-image: url("../images/pillars.png");
+  background-repeat: no-repeat;*/
+  background-image: linear-gradient(135deg, cornflowerblue 0%, slateblue 35%, cornflowerblue 35%, slateblue 100%);
+  background-attachment: fixed;
+  background-color: slateblue;
   color: white;
-  background-color: #333;
-  background-image: linear-gradient(90deg, rgb(49, 168, 81) 1%, rgb(25, 69, 166));
-  border-radius: 20px 20px 0px 0px;
-  margin-top: 0px;
-  padding-top: 10px;
-  padding-bottom: 60px;
+  border-radius: 0px 0px 0px 0px;
+  margin-top: -110px;
+  padding-top: 110px;
+  padding-bottom: 0px;
   padding-left: 20px;
   margin-left: -60px;
-  margin-bottom: -50px; 
+  margin-bottom: 0px; 
   font-size: 3em;
-  font-family:'Trebuchet MS';
+  font-family:'Calibri light';
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 /* h2 is for the secondary headers */
 h2 {
   color: black;
   font-size: 1.2em;
-  font-family: 'Helvetica';
+  font-family: 'Bahnschrift';
   margin-left: -40px;
 }
 
@@ -128,13 +130,6 @@ p {
   color: black;
   margin-left: -40px;
   padding-left: 10px;
-}
-
-/* Give the horizontal rulers a bit of pizazz */
-hr.hr_nav {
-  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255,1) 20% 80%, transparent);
-  height: 1px;
-  border: 0;
 }
 
 ul.posts { 
@@ -163,48 +158,28 @@ ul.posts li {
 }
 .photo img {
   animation: spin 10s linear infinite;
-  border-radius: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
   margin-left: 15px;
   margin-top: 0px;
   margin-bottom: 10px;
 }
 
 /* Footer style */
-.footer1{
-  background-color: #eee;
-  border-radius: 0px 0px 20px 20px;
-  margin-top: -50px;
-  padding-top: 50px;
-  margin-left: 160px;
-  position: relative;
-  z-index: -1;
-}
-
-.footer2 {
-  background-image: linear-gradient(90deg, rgb(49, 168, 81) 1%, rgb(25, 69, 166));
-  border-radius: 0px 0px 20px 20px;
-  margin-left: 160px;
-  margin-top: -50px;
-  padding-top: 100px;
-  margin-bottom: -50px;
-  position: relative;
-  z-index: -2;
-}
-
-.footer3 {
-  background-color: #111;
-  font-family:'Helvetica';
-  padding: 10px;
-  list-style: none;
-  font-weight: bold;
-  border-radius: 0px 0px 20px 0px;
-  margin-left: 150px;
-  padding-bottom: 500px;
-  /* This border-top makes a horizontal line */
-  background-image: url("../images/pillars.png");
-  background-repeat: no-repeat;
+.footer1 {
+  background-image: linear-gradient(135deg, cornflowerblue 0%, slateblue 35%, cornflowerblue 35%, slateblue 100%);
   background-attachment: fixed;
-  font-size: .8em;
-  position: relative;
-  z-index: -3;
+  background-color: slateblue;
+  border-radius: 0px 0px 0px 0px;
+  margin-left: 160px;
+  margin-top: 0px;
+  padding-top: 120px;
+  margin-bottom: 0px;
+}
+.footer2 {
+  background-color: black;
+  padding-bottom: 100px;
+  margin-left: 160px;
+  margin-top: -100px;
+  border-radius: 75px 0px 0px 0px;
 }
