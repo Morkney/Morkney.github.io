@@ -1,21 +1,33 @@
 .header {
-  border-bottom: 1px solid #d5d5d5;
-  background-image: url("../images/placeholder.png");
+  background-image: url("../images/pillars.png");
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #111;
   font-family:'Helvetica';
   padding: 10px;
   list-style: none;
   font-weight: bold;
-  border-radius: 0px 0px 50px 0px;
-  padding-bottom: 50px;
+  border-radius: 0px 0px 0px 0px;
+  padding-bottom: 100px;
   margin-top: -20px;
+  margin-bottom: -50px;
   position: relative;
-  z-order: 1;
+  z-index: -3;
 } 
 
+.header1 {
+  background-color: #eee;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 70px;
+  padding-bottom: 60px;
+  margin-bottom: -135px;
+  margin-left: 160px;
+  position: relative;
+  z-index: -1;
+}
+
 body {
-  background-color: #777;
+  background-color: black;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -25,6 +37,8 @@ body {
 body ul {
   background-color: #eee;
   border-radius: 0px 0px 20px 0px;
+  position: relative;
+  z-index: 100
 }
 
 .container {
@@ -42,7 +56,8 @@ text-decoration: underline;
 
 /* Navigation sidebar style */
 .nav {
-  background-image: url("../images/placeholder.png");
+  background-image: url("../images/pillars.png");
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #111;
   font-family: 'Helvetica';
@@ -50,7 +65,7 @@ text-decoration: underline;
   height: 100%;
   width: 200px;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   left: 10%;
   overflow-x: hidden;
@@ -65,7 +80,7 @@ text-decoration: underline;
   border-radius: 5px;
   text-align: right;
   text-decoration: none;
-  color: #999;
+  color: #ccc;
   transition: 0.2s;
 }
 .nav a:hover {
@@ -80,16 +95,18 @@ text-decoration: underline;
 h1 {
   color: white;
   background-color: #333;
-  border-bottom: 2px solid black;
-  background-image: linear-gradient(90deg, rgb(8, 110, 35) 1%, rgb(25, 69, 166));
-  border-radius: 0px 0px 50px 0px;
-  margin-top: -50px;
-  padding-top: 60px;
-  padding-bottom: 10px;
+  background-image: linear-gradient(90deg, rgb(49, 168, 81) 1%, rgb(25, 69, 166));
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 60px;
   padding-left: 20px;
-  margin-left: -60px; 
+  margin-left: -60px;
+  margin-bottom: -50px; 
   font-size: 3em;
   font-family:'Trebuchet MS';
+  position: relative;
+  z-index: -2;
 }
 
 /* h2 is for the secondary headers */
@@ -124,15 +141,14 @@ ul.posts {
   font-family:'Helvetica';
   margin: 20px auto 40px; 
   font-size: 1.0em;
-  transition: 0.5s;
 }
-ul.posts:hover {
-  padding-left: 50px;
-  transition: 0.5s;
+ul.posts li:hover {
+  padding-left: 10px;
 }
 
 ul.posts li {
   list-style: none;
+  transition: 0.5s;
 }
 
 /* Animate and insert main photo on the sidebar */
@@ -143,6 +159,7 @@ ul.posts li {
   100% {
     transform: rotateZ(360deg);
   }
+
 }
 .photo img {
   animation: spin 10s linear infinite;
@@ -153,25 +170,41 @@ ul.posts li {
 }
 
 /* Footer style */
-.footer1 {
-  border-top: 2px solid black;
-  background-image: linear-gradient(90deg, rgb(8, 110, 35) 1%, rgb(25, 69, 166));
-  border-radius: 0px 50px 0px 0px;
-  padding-top: 100px;
-  margin-bottom: -50px;
+.footer1{
+  background-color: #eee;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: -50px;
+  padding-top: 50px;
+  margin-left: 160px;
+  position: relative;
+  z-index: -1;
 }
 
 .footer2 {
+  background-image: linear-gradient(90deg, rgb(49, 168, 81) 1%, rgb(25, 69, 166));
+  border-radius: 0px 0px 20px 20px;
+  margin-left: 160px;
+  margin-top: -50px;
+  padding-top: 100px;
+  margin-bottom: -50px;
+  position: relative;
+  z-index: -2;
+}
+
+.footer3 {
   background-color: #111;
   font-family:'Helvetica';
   padding: 10px;
   list-style: none;
   font-weight: bold;
-  border-radius: 0px 50px 10px 0px;
-  padding-bottom: 100px;
+  border-radius: 0px 0px 20px 0px;
+  margin-left: 150px;
+  padding-bottom: 500px;
   /* This border-top makes a horizontal line */
-  background-image: url("../images/placeholder.png");
+  background-image: url("../images/pillars.png");
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  border-top: 1px solid #d5d5d5;
   font-size: .8em;
+  position: relative;
+  z-index: -3;
 }
