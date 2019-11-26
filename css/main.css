@@ -1,12 +1,11 @@
 .header {
   background-image: url("../images/placeholder.png"); 
-  background-color: #111;
+  background-color: white;
   border-bottom: 1px solid black;
-  font-family:'Ebrima';
+  font-family: monospace;
   padding: 10px;
   list-style: none;
-  font-weight: bold;
-  border-radius: 0px 0px 100px 0px;
+  border-radius: 0px 0px 25px 0px;
   padding-bottom: 100px;
   margin-top: -20px;
   margin-bottom: 0px;
@@ -15,15 +14,21 @@
 } 
 
 body {
-  background-color: black;
+  background-image: url("../images/placeholder.png");
+  background-color: #eee;
+  font-family: "Garamond", monospace;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
   width: 100%;
+  position: absolute;
+  z-ondex: 2;
 }
 
 body ul {
-  background-color: #eee;
+  padding-left: 10%;
+  font-family: "Garamond", monospace;
+  background-color: white;
   border-radius: 0px 0px 20px 0px;
   position: relative;
   z-index: 100
@@ -44,9 +49,9 @@ text-decoration: underline;
 
 /* Navigation sidebar style */
 .nav {
-  background-color: #445;
-  background-image: linear-gradient(90deg, #334, #445 5% 95%, #334);
-  font-family: 'Ebrima';
+  background-color: white;
+  /*background-image: linear-gradient(90deg, #334, #445 5% 95%, #334);*/
+  font-family: monospace;
   height: 100%;
   width: 200px;
   position: fixed;
@@ -64,12 +69,12 @@ text-decoration: underline;
   padding: 1px 15px 1px 5px;
   text-align: right;
   text-decoration: none;
-  color: #ccc;
+  color: black;
   transition: 0.2s;
+  font-weight: bold;
 }
 .nav a:hover {
-  color: cornflowerblue;
-  background-color: #334;
+  color: blue;
 }
 .nav a:active {
   color: rgb(100, 164, 237);
@@ -92,12 +97,12 @@ text-decoration: underline;
 
 /* h1 is the main header */
 h1 {
-  /*background-image: url("../images/pillars.png");
-  background-repeat: no-repeat;*/
-  background-image: linear-gradient(135deg, cornflowerblue 0%, slateblue 35%, cornflowerblue 35%, slateblue 100%);
-  background-attachment: fixed;
-  background-color: slateblue;
-  color: white;
+  /*background-image: url("../images/pillars.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-image: linear-gradient(135deg, cornflowerblue 0%, slateblue 35%, cornflowerblue 35%, slateblue 100%);*/
+  /*background-attachment: fixed;*/
+  background-color: white;
+  color: black;
   border-radius: 0px 0px 0px 0px;
   margin-top: -110px;
   padding-top: 110px;
@@ -105,8 +110,8 @@ h1 {
   padding-left: 20px;
   margin-left: -60px;
   margin-bottom: 0px; 
-  font-size: 3em;
-  font-family:'Calibri light';
+  font-size: 2.5em;
+  font-family: monospace;
   position: relative;
   z-index: 1;
 }
@@ -115,7 +120,7 @@ h1 {
 h2 {
   color: black;
   font-size: 1.2em;
-  font-family: 'Bahnschrift';
+  font-family: "Garamond", monospace;
   margin-left: -40px;
 }
 
@@ -133,7 +138,7 @@ p {
 }
 
 ul.posts { 
-  font-family:'Helvetica';
+  font-family: monospace;
   margin: 20px auto 40px; 
   font-size: 1.0em;
 }
@@ -167,9 +172,7 @@ ul.posts li {
 
 /* Footer style */
 .footer1 {
-  background-image: linear-gradient(135deg, cornflowerblue 0%, slateblue 35%, cornflowerblue 35%, slateblue 100%);
-  background-attachment: fixed;
-  background-color: slateblue;
+  background-color: white;
   border-radius: 0px 0px 0px 0px;
   margin-left: 160px;
   margin-top: 0px;
@@ -177,9 +180,11 @@ ul.posts li {
   margin-bottom: 0px;
 }
 .footer2 {
-  background-color: black;
+  background-image: url("../images/placeholder.png"); 
   padding-bottom: 100px;
-  margin-left: 160px;
+  margin-left: 46px;
   margin-top: -100px;
-  border-radius: 75px 0px 0px 0px;
+  border-radius: 25px 0px 0px 0px;
+  position: relative;
+  z-index: 0;
 }
